@@ -81,3 +81,5 @@ if (ani) {
 } else {
     renderer.render( scene, camera );
 }
+
+window.animate = animate;
