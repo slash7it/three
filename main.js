@@ -83,3 +83,4 @@ if (ani) {
 }
 
 window.animate = animate;
+window.renderer = renderer;
