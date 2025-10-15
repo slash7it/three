@@ -14,3 +14,9 @@ document.querySelector("#submit").onclick = (e) => {
         log("Error: ", Webex.Application.ErrorCodes[errorcode])
     });
 };
+
+document.querySelector("#load").onclick = (e) => {
+	let session = document.querySelector("#vid").value;
+	let url = `https://vevox.app/#/m${session}`;
+	document.querySelector("#fr").src = url;
+};
