@@ -8,6 +8,7 @@ document.querySelector("#submit").onclick = (e) => {
 	// let url = "https://slash7it.github.io/three/foo.html";
 	let session = document.querySelector("#vid").value;
 	let url = `https://vevox.app/#/m/${session}`
+	document.querySelector("#fr").src = url;
 	app.setShareUrl(url, "", "Shared App").then(() => {
         log("Set share URL", url);
     }).catch((errorcode) => {
@@ -17,6 +18,6 @@ document.querySelector("#submit").onclick = (e) => {
 
 document.querySelector("#load").onclick = (e) => {
 	let session = document.querySelector("#vid").value;
-	let url = `https://vevox.app/#/m${session}`;
+	let url = `https://vevox.app/#/m/${session}`;
 	document.querySelector("#fr").src = url;
 };
