@@ -1,5 +1,9 @@
 var app = new window.Webex.Application();
 
+function log(text) {
+	console.log(text);
+}
+
 app.onReady().then(function () {
   log('App is ready. App info:', app);
 });
