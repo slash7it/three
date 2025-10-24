@@ -25,8 +25,8 @@ document.querySelector("#submit").onclick = (e) => {
     });
 };
 
-document.querySelector("#load").onclick = (e) => {
-	let session = document.querySelector("#vid").value;
-	let url = `https://vevox.app/#/m/${session}`;
-	document.querySelector("#fr").src = url;
-};
+// document.querySelector("#load").onclick = (e) => {
+// 	let session = document.querySelector("#vid").value;
+// 	let url = `https://vevox.app/#/m/${session}`;
+// 	document.querySelector("#fr").src = url;
+// };
