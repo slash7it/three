@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://binaries.webex.com/static-content-pipeline/webex-embedded-app/v1/webex-embedded-app-sdk.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Webex Embedded App</title>
+  <style>
+    .hidden: {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="app" class="hidden">
+    <script type="module" src="webex2.js"></script>
+    <input id="vid" type="text">
+    <button id="submit">Share</button>
+    <iframe id="fr" style="width: 100vw;height: 90vh;"></iframe>
+  </div>
+  <div id="errMsg">
+    This page is only supported in the webex app.
+  </div>
+</body>
+</html>
