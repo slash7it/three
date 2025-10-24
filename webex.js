@@ -6,7 +6,8 @@ function log(text) {
 
 app.onReady().then(function () {
   log('App is ready. App info:', app);
-});
+})
+.catch((err) => { console.err(err); });
 
 document.querySelector("#submit").onclick = (e) => {
 	// let url = "https://slash7it.github.io/three/foo.html";
