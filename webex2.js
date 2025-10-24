@@ -4,14 +4,11 @@ function log(text) {
 	console.log(text);
 }
 
-if (app.sdkVersion) {
-  document.querySelector("#app").classList.remove('hidden');
-  document.querySelector("#errMsg").classList.add('hidden');
-}
-
 app.onReady()
 .then(function () {
-  log('App is ready. App info:', app);
+	document.querySelector("#app").classList.remove('hidden');
+	document.querySelector("#errMsg").classList.add('hidden');
+	log('App is ready. App info:', app);
 })
 .catch((err) => { 
   console.err(err);
