@@ -5,8 +5,8 @@ function log(text) {
 }
 
 if (app.sdkVersion) {
-  document.querySelector("#app").removeClassList('hidden');
-  document.querySelector("#errMsg").addClassList('hidden');
+  document.querySelector("#app").classList.remove('hidden');
+  document.querySelector("#errMsg").classList.add('hidden');
 }
 
 app.onReady()
