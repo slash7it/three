@@ -4,9 +4,9 @@ function log(text) {
 	console.log(text);
 }
 
-if (!app.sdkVersion) {
-  document.querySelector("#app").addClassList('hidden');
-  document.querySelector("#errMsg").removeClassList('hidden');
+if (app.sdkVersion) {
+  document.querySelector("#app").removeClassList('hidden');
+  document.querySelector("#errMsg").addClassList('hidden');
 }
 
 app.onReady()
