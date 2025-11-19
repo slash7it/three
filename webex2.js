@@ -20,6 +20,7 @@ document.querySelector("#submit").onclick = (e) => {
 	document.querySelector("#fr").src = url;
 	app.setShareUrl(url, "", "Shared App").then(() => {
         log("Set share URL", url);
+		window.location.href = url;
     }).catch((errorcode) => {
         log("Error: ", Webex.Application.ErrorCodes[errorcode])
     });
